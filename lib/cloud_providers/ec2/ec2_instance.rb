@@ -55,7 +55,7 @@ module CloudProviders
     end
 
     def reachable?
-      ping_port self.public_ip, 22
+      ping_port self.private_ip, 22
     end
 
     def ssh_available?
